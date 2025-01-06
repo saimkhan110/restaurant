@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $("#but1").click(function(){
+                alert("TextL:" + $("#test1").text());
+            });
+            $("#but2").click(function(){
+                alert("html:" + $("#test1").html());
+            });
+            $("button").click(function(){
+                alert("value:" + $("#test2").val());
+            });
+        });
+    </script>
+    <p id="test1">this is my <b>jquery</b> get methods !</p>
+    <button id="but1">show text</button>
+    <button id="but2">show html</button>
+    <p>name: <input type="text" id="test2" value="hello class"></p>
+    <button>show value</button>
+</body>
+</html>
